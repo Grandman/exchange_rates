@@ -1,6 +1,5 @@
 class Web::AdminsController < Web::ApplicationController
   def show
-    @forced_rates = Rate.where(forced: true)
     @forced_rate_form = ForcedRateForm.new
   end
 

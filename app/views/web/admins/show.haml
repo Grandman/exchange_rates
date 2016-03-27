@@ -1,8 +1,6 @@
 .container
   .row
-    -#Уже введены:
-    -#- @forced_rates.each do |rate|
-    -#  %li= rate.dollar_rate
+    = render 'shared/forced_rate_list', forced_rates: Rate.forced
   .row
     = simple_form_for @forced_rate_form, url: admin_path, html: { class: 'form-horizontal' } do |f|
       = f.input :dollar_rate
