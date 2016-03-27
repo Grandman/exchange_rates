@@ -33,8 +33,11 @@ gem 'simple_form'
 
 gem 'sinatra', :require => nil
 gem 'sidekiq'
+gem 'sidekiq-scheduler'
 
 gem 'rest-client'
+
+gem 'foreman'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -48,6 +51,7 @@ gem 'rest-client'
 group :test do
   gem 'rspec-rails'
   gem 'webmock'
+  gem 'factory_girl_rails'
 end
 
 group :development, :test do
