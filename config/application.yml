@@ -1,0 +1,2 @@
+parse_job_interval: 10m
+faye_auth_token: changeme

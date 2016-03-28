@@ -38,6 +38,7 @@ gem 'sinatra', :require => nil
 gem 'sidekiq'
 gem 'sidekiq-scheduler'
 gem 'faye-rails'
+gem 'figaro'
 
 gem 'rest-client'
 

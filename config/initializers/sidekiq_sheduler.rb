@@ -1,5 +1,11 @@
 # config/initializers/sidekiq_scheduler.rb
 require 'sidekiq/scheduler'
 
-Sidekiq.schedule = YAML.load_file(File.expand_path('../../../config/dollar_rate_job.yml', __FILE__))
+Sidekiq.schedule = {
+    'DollarRateWorker' =>
+      {
+        'every'=> [Figaro.env.parse_job_interval], 'class' => 'DollarRateWorker',
+        'queue' => 'default'
+      }
+    }
 Sidekiq::Scheduler.reload_schedule!

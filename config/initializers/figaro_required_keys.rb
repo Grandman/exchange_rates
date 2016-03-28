@@ -1,0 +1,1 @@
+Figaro.require_keys('faye_auth_token', 'parse_job_interval')
