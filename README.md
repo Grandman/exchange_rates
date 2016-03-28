@@ -7,6 +7,7 @@ This app uses sidekiq which uses Redis.
 redis-server
 foreman start
 ```
+Go to http://127.0.0.1:3000/
 
 ## Configuring
 
