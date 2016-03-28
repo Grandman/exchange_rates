@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'virtus'
+gem 'validates_timeliness'
 
 gem 'bootstrap-sass'
 gem 'momentjs-rails'
@@ -38,6 +39,8 @@ gem 'sidekiq-scheduler'
 gem 'rest-client'
 
 gem 'foreman'
+
+gem 'pry-byebug'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
