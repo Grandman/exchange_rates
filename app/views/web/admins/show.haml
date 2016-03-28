@@ -1,7 +1,5 @@
 .container
-  .row
-    = render 'shared/forced_rate_list', forced_rates: Rate.forced
-  .row
+  .jumbotron.col-lg-6.col-lg-offset-3.vertical-center.text-center.rate
     = simple_form_for @forced_rate_form, url: admin_path, html: { class: 'form-horizontal' } do |f|
       = f.input :dollar_rate
       -# Два поля для того, чтобы время передавалось вместе с таймзоной;

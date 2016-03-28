@@ -44,6 +44,8 @@ gem 'rest-client'
 gem 'foreman'
 gem 'thin'
 
+gem 'rails-i18n'
+
 gem 'pry-byebug'
 
 # Use ActiveModel has_secure_password

@@ -9,8 +9,8 @@ class Web::AdminsController < Web::ApplicationController
       @rate = Rate.new rate_params
       @rate.forced = true
       @rate.save!
-      PublishService.perform(@rate.dollar_rate)
-      DollarRateWorker.perform_at(@rate.date_to)
+      PublishService.perform @rate.dollar_rate
+      DollarRateWorker.perform_at @rate.date_to
       redirect_to admin_path
     else
       render :show

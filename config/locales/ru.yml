@@ -1,0 +1,13 @@
+ru:
+  shared:
+    forced_rate_list:
+      entered_values: Введенные ранее значения
+  activemodel:
+    attributes:
+      forced_rate_form:
+        date_to: Дата окончания
+        dollar_rate: Курс доллара
+  helpers:
+    submit:
+      forced_rate_form:
+        create: Добавить
