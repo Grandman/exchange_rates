@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe 'admin', type: :request do
   let!(:forced_rate) { create :forced_rate }
   let(:forced_rate_attributes) { attributes_for :forced_rate}
+  before{ WebMock.allow_net_connect! }
 
   context 'index' do
     it 'render with 200 status' do

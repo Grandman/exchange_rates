@@ -28,17 +28,21 @@ gem 'validates_timeliness'
 
 gem 'bootstrap-sass'
 gem 'momentjs-rails'
+gem 'react-rails'
 gem 'bootstrap3-datetimepicker-rails'
 gem 'haml'
 gem 'simple_form'
+gem 'gon'
 
 gem 'sinatra', :require => nil
 gem 'sidekiq'
 gem 'sidekiq-scheduler'
+gem 'faye-rails'
 
 gem 'rest-client'
 
 gem 'foreman'
+gem 'thin'
 
 gem 'pry-byebug'
 

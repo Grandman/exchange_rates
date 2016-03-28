@@ -1,5 +1,5 @@
 DollarRateWorker:
-  every: ["1m"]
+  every: ["10m"]
   class: DollarRateWorker
   queue: default
   description: "update rate every 1 minute"
