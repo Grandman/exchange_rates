@@ -26,7 +26,7 @@ var faye = new Faye.Client('http://localhost:9292/faye');
 
 $(function () {
     $('input.datetime_picker').datetimepicker({
-        format: 'YYYY-mm-DD HH:MM',
+        format: 'YYYY-MM-DD HH:mm'
     });
 
     //для того, чтобы время передавалось вместе с таймзоной
